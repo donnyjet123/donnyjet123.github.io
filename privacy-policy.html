@@ -1,3 +1,21 @@
+pubspec(1).yaml
+File
+main(1).dart
+File
+app_shell(1).dart
+File
+AndroidManifest(1).xml
+File
+app_shell.dart was in lib/app
+
+Edit
+
+Yes. That policy is a good base, but the Advertising, Analytics, and Data Sharing sections are now inaccurate because we're adding AdMob.
+
+I would also change the effective date to August 31, 2026 and make the policy a little more complete before moving it to GitHub Pages.
+
+Here is the revised text I'd use:
+
 BoatWrench Privacy Policy
 
 Effective Date: August 31, 2026
@@ -95,3 +113,344 @@ Changes to This Privacy Policy
 This Privacy Policy may be updated as BoatWrench evolves, including if future versions introduce additional advertising services, online services, cloud synchronization, accounts, or other features that change how information is handled.
 
 Changes will be reflected by updating the effective date shown at the top of this policy.
+
+Contact
+
+If you have questions about this Privacy Policy or BoatWrench's privacy practices, please contact:
+
+BoatWrench
+Email: [YOUR SUPPORT EMAIL ADDRESS]
+
+One thing I need from you
+
+We need to put a real contact email in that last section before publishing it.
+
+After that, I'd make your GitHub Pages site:
+
+donnyjet123.github.io/ → simple BoatWrench landing/developer page
+donnyjet123.github.io/privacy-policy.html → this policy
+donnyjet123.github.io/app-ads.txt → your existing AdMob verification file
+
+Once you give me the email address you want BoatWrench users to contact, I can generate the complete index.html and privacy-policy.html files for you so you can upload them directly to the GitHub repo.
+
+Yep — I see what happened. The privacy policy is being served as plain text instead of an HTML webpage. That's why all the headings and paragraphs are smashed together.
+
+The content itself is there; we just need to format the GitHub Pages file as actual HTML.
+
+I recommend we make it look like a legitimate BoatWrench privacy page with:
+
+BoatWrench heading
+Effective date
+Proper section headings
+Readable paragraph spacing
+Bullet lists
+Clickable Google Privacy Policy links
+Mobile-friendly layout
+Simple professional styling
+Link back to the BoatWrench home page
+
+I can generate a complete privacy-policy.html file for you to upload directly to donnyjet123.github.io.
+
+One thing first: what email address do you want listed as the BoatWrench privacy/support contact?
+
+Once you give me that, I'll make the finished HTML file rather than having you manually format any of this.
+
+make me the html
+
+Done — I made the complete formatted HTML privacy policy for GitHub Pages.
+
+Download privacy-policy.html
+
+Upload that file directly to the root of your donnyjet123.github.io GitHub repository. Then the privacy policy URL will be:
+
+https://donnyjet123.github.io/privacy-policy.html
+
+I used the Google Play Store support email as the contact reference so you don't have to expose an email address in the HTML unless you want to. 
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="BoatWrench Privacy Policy">
+  <title>BoatWrench Privacy Policy</title>
+  <style>
+    :root {
+      color-scheme: light;
+      --bg: #f5f7fa;
+      --card: #ffffff;
+      --text: #1f2937;
+      --muted: #6b7280;
+      --border: #dbe3ea;
+      --accent: #0f5f8f;
+      --accent-dark: #0b466a;
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      font-family: Arial, Helvetica, sans-serif;
+      background: var(--bg);
+      color: var(--text);
+      line-height: 1.65;
+    }
+
+    .page {
+      max-width: 920px;
+      margin: 0 auto;
+      padding: 32px 18px 48px;
+    }
+
+    .card {
+      background: var(--card);
+      border: 1px solid var(--border);
+      border-radius: 14px;
+      padding: 36px;
+      box-shadow: 0 8px 24px rgba(0, 0, 0, 0.05);
+    }
+
+    h1 {
+      margin-top: 0;
+      margin-bottom: 8px;
+      color: var(--accent-dark);
+      font-size: 2rem;
+    }
+
+    h2 {
+      margin-top: 30px;
+      margin-bottom: 10px;
+      color: var(--accent-dark);
+      font-size: 1.25rem;
+    }
+
+    p {
+      margin: 0 0 14px;
+    }
+
+    ul {
+      margin-top: 8px;
+      padding-left: 24px;
+    }
+
+    li {
+      margin-bottom: 6px;
+    }
+
+    a {
+      color: var(--accent);
+    }
+
+    .effective-date {
+      color: var(--muted);
+      margin-bottom: 28px;
+    }
+
+    .notice {
+      background: #eef6fb;
+      border-left: 4px solid var(--accent);
+      padding: 14px 16px;
+      margin: 20px 0;
+      border-radius: 6px;
+    }
+
+    .footer {
+      margin-top: 36px;
+      padding-top: 20px;
+      border-top: 1px solid var(--border);
+      color: var(--muted);
+      font-size: 0.95rem;
+    }
+
+    @media (max-width: 600px) {
+      .page {
+        padding: 16px 10px 28px;
+      }
+
+      .card {
+        padding: 24px 18px;
+        border-radius: 10px;
+      }
+
+      h1 {
+        font-size: 1.7rem;
+      }
+    }
+  </style>
+</head>
+<body>
+  <main class="page">
+    <section class="card">
+      <h1>BoatWrench Privacy Policy</h1>
+      <p class="effective-date"><strong>Effective Date:</strong> August 31, 2026</p>
+
+      <h2>Overview</h2>
+      <p>
+        BoatWrench is a boat ownership and maintenance application that helps users organize boats,
+        engines, maintenance records, fuel logs, trips, parts inventory, documents, photos, and
+        related ownership information.
+      </p>
+      <p>
+        This Privacy Policy explains how information is handled when you use BoatWrench.
+      </p>
+
+      <h2>Information You Provide</h2>
+      <p>You may voluntarily enter or attach information such as:</p>
+      <ul>
+        <li>Boat and engine information</li>
+        <li>Maintenance records and service history</li>
+        <li>Fuel logs</li>
+        <li>Trip logs</li>
+        <li>Parts and equipment information</li>
+        <li>Photos and documents you choose to attach</li>
+        <li>Notes and checklists</li>
+      </ul>
+
+      <h2>Local Data Storage</h2>
+      <p>
+        BoatWrench stores the boat and ownership information you enter locally on your device.
+      </p>
+      <p>
+        BoatWrench does not currently require a user account, and the current version does not upload
+        your boat records, maintenance records, fuel logs, trip logs, attached documents, photos,
+        notes, or other ownership records to BoatWrench-operated servers.
+      </p>
+      <p>
+        Removing the application or clearing its application data may result in the loss of locally
+        stored information.
+      </p>
+
+      <h2>Photos, Documents, and Camera</h2>
+      <p>
+        BoatWrench may access your device's camera, photos, or documents when you explicitly choose
+        to capture or attach media within the application.
+      </p>
+      <p>
+        BoatWrench does not access these items for advertising purposes.
+      </p>
+
+      <h2>Advertising and Google AdMob</h2>
+      <p>
+        BoatWrench displays advertisements provided through Google AdMob and the Google Mobile Ads SDK.
+      </p>
+      <p>
+        Google and its advertising services may automatically collect or receive certain information
+        when an advertisement is requested or displayed. Depending on the device, configuration,
+        applicable law, and user privacy choices, this may include:
+      </p>
+      <ul>
+        <li>Device or other identifiers, including advertising identifiers where available</li>
+        <li>IP address, which may be used to derive approximate location</li>
+        <li>Interactions with the application and advertisements</li>
+        <li>Diagnostic and performance information</li>
+      </ul>
+      <p>
+        This information may be used for purposes including providing and measuring advertisements,
+        analytics, and fraud prevention, security, and compliance.
+      </p>
+      <p>
+        BoatWrench does not provide advertisers with the boat records, maintenance information, fuel
+        logs, trip information, photos, documents, notes, or other ownership information that you
+        enter into the application.
+      </p>
+
+      <div class="notice">
+        Google's handling of information is governed by its own privacy policies and terms.
+      </div>
+
+      <p>
+        <a href="https://policies.google.com/privacy" target="_blank" rel="noopener noreferrer">
+          Google Privacy Policy
+        </a>
+      </p>
+      <p>
+        <a href="https://policies.google.com/technologies/partner-sites" target="_blank" rel="noopener noreferrer">
+          How Google uses information from sites or apps that use its services
+        </a>
+      </p>
+
+      <h2>Data Sharing</h2>
+      <p>
+        BoatWrench does not sell the boat and ownership information that you enter into the application.
+      </p>
+      <p>
+        However, because BoatWrench uses Google AdMob, certain device, advertising, interaction,
+        diagnostic, and approximate-location information may be collected or shared with Google and
+        its advertising technologies as described above.
+      </p>
+
+      <h2>Analytics</h2>
+      <p>
+        BoatWrench does not currently operate its own separate analytics service.
+      </p>
+      <p>
+        The Google Mobile Ads SDK may collect information used for analytics and advertisement
+        measurement as part of providing advertising services.
+      </p>
+
+      <h2>Advertising ID</h2>
+      <p>
+        BoatWrench uses the Google Mobile Ads SDK, which may access your device's advertising
+        identifier where available.
+      </p>
+      <p>
+        Your operating system may provide controls that allow you to reset, delete, or otherwise limit
+        the use of advertising identifiers and personalized advertising.
+      </p>
+
+      <h2>Data Security</h2>
+      <p>
+        BoatWrench's core user-entered records are stored locally on your device. Information
+        transmitted by third-party services such as Google AdMob is handled according to the security
+        practices of those service providers.
+      </p>
+      <p>
+        No method of electronic storage or transmission can be guaranteed to be completely secure.
+      </p>
+
+      <h2>Children's Privacy</h2>
+      <p>
+        BoatWrench is intended for adult boat owners and is not directed toward children under the age
+        of 13.
+      </p>
+      <p>
+        BoatWrench does not knowingly seek to collect personal information from children.
+      </p>
+
+      <h2>Your Privacy Choices</h2>
+      <p>
+        Your device and Google services may provide controls related to advertising, advertising
+        identifiers, and personalized advertisements.
+      </p>
+      <p>
+        Additional privacy choices may be presented where required based on your location and
+        applicable privacy laws.
+      </p>
+
+      <h2>Changes to This Privacy Policy</h2>
+      <p>
+        This Privacy Policy may be updated as BoatWrench evolves, including if future versions
+        introduce additional advertising services, online services, cloud synchronization, accounts,
+        or other features that change how information is handled.
+      </p>
+      <p>
+        Changes will be reflected by updating the effective date shown at the top of this policy.
+      </p>
+
+      <h2>Contact</h2>
+      <p>
+        If you have questions about this Privacy Policy or BoatWrench's privacy practices, please
+        contact BoatWrench using the support email address listed on the app's Google Play Store page.
+      </p>
+
+      <div class="footer">
+        &copy; 2026 BoatWrench. All rights reserved.
+      </div>
+    </section>
+  </main>
+</body>
+</html>
+privacy-policy.html
+HTML
